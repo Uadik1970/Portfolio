@@ -1,11 +1,15 @@
 import React from 'react'
+import container from '../common/styles/Container.module.css'
 import s from './Header.module.css'
+// последний импорт перетирает верхние
+
 import { Nav } from '../nav/Nav'
+
 
 export const Header = () => {
     return (
         <div className={s.Header}>
-            <div className={s.container}>
+            <div className={`${container.container} ${s.navContainer}`}>
                 <Nav />
             </div>
         </div>

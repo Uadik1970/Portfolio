@@ -1,13 +1,13 @@
 .Header {
     height: 80px;
     background-color: aquamarine;
-    display: flex;
+    /* display: flex;
     justify-content: flex-end;
-    align-items: center;
-    /* max-width: 800px; */
+    align-items: center; */
 
-  
 }
-.container{
-    /* max-width: 80px; */
+.navContainer{
+    justify-content: end;
+    
+    background-color:darkgrey;
 }
