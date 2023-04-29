@@ -1,0 +1,19 @@
+.mainBlock{
+    height: 100vh;
+    background-color: coral;
+    /* display: flex;
+    justify-content: space-between;
+    flex-direction: row; */
+}
+
+
+
+.greetings{
+    width: 300px;
+    background-color: antiquewhite;
+}
+.photo{
+    width: 300px;
+    height: 400px;
+    background-color: blueviolet;
+}

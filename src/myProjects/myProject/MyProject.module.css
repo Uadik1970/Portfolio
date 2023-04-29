@@ -1,0 +1,16 @@
+.myProject{
+    /* width: 250px; */
+
+ 
+    background-color:darkgray;
+}
+
+
+.projectImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 150px;
+   height: 150px;
+    background-color: #fff;
+}

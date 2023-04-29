@@ -1,0 +1,16 @@
+.contacts{
+    height: 100vh;
+    background-color: blanchedalmond;
+}
+
+.contactsContainer{
+    flex-direction: column;
+}
+
+.contactsForm{
+    height: 100px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
