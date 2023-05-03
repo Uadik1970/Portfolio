@@ -1,14 +1,25 @@
 .skill{
     width: 250px;
-    background-color: bisque;
+    /* background-color: bisque; */
     display: flex;
     flex-direction: column;
     /* justify-content: space-around; */
     align-items: center;
     text-align: center;
 }
-.icon{
-    width: 60px;
-    height: 60px;
-    background-color: darkgoldenrod;
+.skill::after{
+    content: '';
+    width: 50px;
+    height: 5px;
+    background-color: #00abf0;
+    margin-top: 10px;
 }
+
+.icon{
+    transition: 1s;
+
+}
+.icon:hover {
+    transform:  rotateY(360deg);
+}
+

@@ -8,7 +8,7 @@ import { Nav } from '../nav/Nav'
 
 export const Header = () => {
     return (
-        <div className={s.Header}>
+        <div className={s.header}>
             <div className={`${container.container} ${s.navContainer}`}>
                 <a href='#' className={s.logo}>Vadim.</a>
                 <Nav />
