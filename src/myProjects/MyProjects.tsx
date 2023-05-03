@@ -1,18 +1,36 @@
 import React from 'react'
-import s from './MyProjects.module.css'
 import container from '../common/styles/Container.module.css'
+import s from './MyProjects.module.css'
 import { MyProject } from './myProject/MyProject'
+import { Title } from '../components/title/Title'
 
 
 export const MyProjects = () => {
     return (
         <div className={s.MyProjectsBlock}>
             <div className={`${container.container} ${s.myProjectsContainer}`}>
-                <h2>My Projects</h2>
+                <Title title='My projects' />
                 <div className={s.myProjects}>
-                    <MyProject />
-                    <MyProject />
-                    <MyProject />
+                    <MyProject
+                        title='React'
+                        dexcription='Description Description Description'
+                    />
+                    <MyProject
+                        title='React'
+                        dexcription='Description Description Description
+                    Description Description Description'
+                    />
+                    <MyProject
+                        title='React'
+                        dexcription='Description Description Description
+                               Description Description Description'
+                    />
+                    <MyProject
+                        title='React'
+                        dexcription='Description Description Description
+                               Description Description Description'
+                    />
+
                 </div>
             </div>
         </div>

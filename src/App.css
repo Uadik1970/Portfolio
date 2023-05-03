@@ -1,11 +1,25 @@
 *{
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 ;
     padding: 0;
     text-decoration: none;
+    list-style: none;
+    
 }
-
 .App {
-  
+  color: white;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+  /* background: rgb(10,10,10);
+  background: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(57,87,128,1) 50%, rgba(10,10,10,1) 100%); */
+  background-color: #081b29;
 }
 
+
+/* @font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+  font-family: "RalewayRegular"; 
+  // адрес шрифта и тип 
+  src: url("../fonts/RalewayRegular.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+  }  */

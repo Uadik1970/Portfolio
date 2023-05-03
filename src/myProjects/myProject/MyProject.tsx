@@ -1,16 +1,19 @@
-import React from 'react'
+import React, { FC } from 'react'
 import s from './MyProject.module.css'
-import container from '../common/styles/Container.module.css'
 
+type MyProjectPropsType = {
+    title: string
+    dexcription: string
+}
 
-export const MyProject = () => {
+export const MyProject: FC<MyProjectPropsType> = ({ title, dexcription }) => {
     return (
         <div className={s.myProject}>
             <div className={s.projectImage}>
-                <button>Open</button>
+                <a href="#" className={s.viewBtn}>Open</a>
             </div>
-            <h3>Project name</h3>
-            <span>Description</span>
+            <h3>{title}</h3>
+            <span>{dexcription}</span>
         </div>
     )
 }

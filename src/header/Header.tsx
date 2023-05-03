@@ -10,6 +10,7 @@ export const Header = () => {
     return (
         <div className={s.Header}>
             <div className={`${container.container} ${s.navContainer}`}>
+                <a href='#' className={s.logo}>Vadim.</a>
                 <Nav />
             </div>
         </div>

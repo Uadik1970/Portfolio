@@ -1,13 +1,9 @@
 .MyProjectsBlock{
-    height: 100vh;
-    background-color: darkseagreen;
-    
+    min-height: 100vh;
+    /* background-color: darkseagreen; */
 }
 .myProjectsContainer{
-        flex-direction: column;
-        /* align-items: center; */
-    justify-content: space-between;
-   
+    flex-direction: column;
 }
 
 .myProjects{
@@ -15,8 +11,15 @@
     justify-content: space-between;
     width: 100%;
     flex-wrap: wrap;
-    
+   
+   /* align-items: flex-start; */
 }
 .myProjectsItem{
 
+}
+
+@media screen and (max-width: 782px) {
+    .myProjects {
+        justify-content: center;
+    }
 }

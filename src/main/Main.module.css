@@ -1,19 +1,134 @@
 .mainBlock{
-    height: 100vh;
-    background-color: coral;
+    padding-top: 50px;
+    min-height: 100vh;
+    /* height: 100%; */
+    /* background-color: coral; */
     /* display: flex;
     justify-content: space-between;
     flex-direction: row; */
 }
-
-
-
-.greetings{
-    width: 300px;
-    background-color: antiquewhite;
+.mainBlockContainer{
+    /* align-items: center; */
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+   
+    height: 100%; 
 }
+.greetings{
+    /* max-height: 200px; */
+    /* height: 100%; */
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.greetings h1{
+    font-size: 56px;
+    font-weight: 700;
+    position: relative;
+}
+.greetings h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+    }
+    
+.greetings h3{
+font-size: 32px;
+font-weight: 700;
+color: #00abf0;
+position: relative;
+}
+.greetings h3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.3s;
+    }
+
+.greetings p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+    position: relative;
+}
+.greetings p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+    }
+
 .photo{
-    width: 300px;
-    height: 400px;
+    width: 400px;
+    height: 500px;
     background-color: blueviolet;
 }
+
+
+
+.mainBlockContacts{
+    /* width: 100%; */
+    max-width: 300px;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    position: relative;
+}
+.mainBlockContacts::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.5s;
+    }
+.mainBlockContacts svg{
+    margin: 0 5px;
+    transition-duration: 0.3s;
+    border-radius: 50%;
+
+}
+.mainBlockContacts svg:hover{
+    background-color: aliceblue;
+    transform: rotate(360deg);
+    fill: #00abf0;
+}
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+
+@media screen and (max-width: 1252px) {
+    .mainBlockContainer  {
+    flex-direction: column;
+    }
+    .greetings{
+      align-items: center;
+      text-align: center;
+    }
+}
+

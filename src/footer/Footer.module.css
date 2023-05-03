@@ -1,20 +1,37 @@
 .footer{
-    height: 200px;
-    background-color: darkkhaki;
+    height: 180px;
+    /* background-color: white; */
+   
 }
 
 .footerContainer{
     display: flex;
     flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
 }
 
 .footerContacts{
-    width: 250px;
+    width: 100%;
+    max-width: 360px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footerContacts svg{
+    margin: 0 5px;
+    transition-duration: 0.3s;
+    border-radius: 50%;
+
+}
+.footerContacts svg:hover{
+    background-color: aliceblue;
+    transform: rotate(360deg);
+    fill: #00abf0;
+    
 }
 .footerContactsItem{
-    width: 50px;
-    height: 50px;
-background-color: #fff;
+    /* width: 50px; */
+    /* height: 50px; */
+    /* background-color: #fff; */
 }
