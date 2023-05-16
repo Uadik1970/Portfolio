@@ -9,9 +9,17 @@
   font-weight: 500;
   font-size: 18px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .nav a:hover,
-.nav a.activeLink {
+.nav a.active {
   color: #00abf0;
 }
+/* 
+
+@media screen and (max-width: 580px) {
+  .nav{
+      display: none;
+  }
+} */

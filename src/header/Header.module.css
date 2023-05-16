@@ -2,17 +2,20 @@
     height: 50px;
     position: fixed;
     width: 100%;
-    background-color: #081b29 ;
+    background-color:  var(--second-bg-color) ;
     top: 0;
     left: 0;
     z-index: 2;
 }
 .navContainer{
     display: flex; 
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 }
-
+.burgerMenu{
+    display:none;
+  
+}
 .logo{
     font-size: 25px;
     color: #ededed;
@@ -36,3 +39,10 @@ animation-delay: 0.4s;
         width: 0;
     }
 }
+
+/* 
+@media screen and (max-width: 580px) {
+    .burgerMenu{
+        display: inline-block;
+    }
+} */

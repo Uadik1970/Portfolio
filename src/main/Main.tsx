@@ -3,10 +3,12 @@ import container from '../common/styles/Container.module.css'
 import s from './Main.module.css'
 
 
+const Zoom = require("react-reveal/Zoom")
+
 export const Main = () => {
     return (
         <div className={s.mainBlock}>
-            <div className={`${container.container} ${s.mainBlockContainer}`}>
+            <div id='home' className={`${container.container} ${s.mainBlockContainer}`}>
                 <div className={s.greetings}>
                     <h1>Hi, I'm Vadim Timofeev</h1>
                     <h3>A Frontend Developer</h3>
@@ -100,10 +102,15 @@ export const Main = () => {
                         </a>
                     </div>
                 </div>
-                <div className={s.photo}>
-                </div>
+                <Zoom >
+                    <div className={s.photo}>
+                    </div>
+                </Zoom>
+
 
             </div>
+
+
         </div >
     )
 }

@@ -6,12 +6,16 @@
     /* display: flex;
     justify-content: space-between;
     flex-direction: row; */
+    
+
 }
 .mainBlockContainer{
+
     /* align-items: center; */
     justify-content: space-between;
-    /* flex-wrap: wrap; */
-   
+    min-height: 100vh;
+    
+
     height: 100%; 
 }
 .greetings{
@@ -22,6 +26,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+
+
 }
 
 .greetings h1{
@@ -38,7 +44,7 @@
     height: 100%;
     background-color: #081b29;
     animation: showRight 1s ease forwards;
-    animation-delay: 1s;
+    animation-delay: .6s;
     }
     
 .greetings h3{
@@ -56,7 +62,7 @@ position: relative;
     height: 100%;
     background-color: #081b29;
     animation: showRight 1s ease forwards;
-    animation-delay: 1.3s;
+    animation-delay: .9s;
     }
 
 .greetings p {
@@ -73,12 +79,12 @@ position: relative;
     height: 100%;
     background-color: #081b29;
     animation: showRight 1s ease forwards;
-    animation-delay: 1.6s;
+    animation-delay: 1.3s;
     }
 
 .photo{
-    width: 400px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     background-color: blueviolet;
 }
 
@@ -89,6 +95,7 @@ position: relative;
     max-width: 300px;
     display: flex;
     justify-content:center;
+    /* align-items: center; */
     flex-wrap: wrap;
     margin: 20px 0;
     position: relative;
@@ -102,7 +109,7 @@ position: relative;
     height: 100%;
     background-color: #081b29;
     animation: showRight 1s ease forwards;
-    animation-delay: 2.5s;
+    animation-delay: 1.9s;
     }
 .mainBlockContacts svg{
     margin: 0 5px;
@@ -125,6 +132,7 @@ position: relative;
 @media screen and (max-width: 1252px) {
     .mainBlockContainer  {
     flex-direction: column;
+  
     }
     .greetings{
       align-items: center;
